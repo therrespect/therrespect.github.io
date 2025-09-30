@@ -21,6 +21,71 @@ body {
   line-height: 1.6;
 }
 
+.product-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.item-price {
+    color: #8B4513;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: auto;
+}
+
+.features-section {
+    background: #f8f9fa;
+    width: 100%;
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.features-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.features-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.feature p {
+    color: #666;
+    line-height: 1.5;
+}
 
         .container {
             max-width: 1200px;
@@ -291,7 +356,7 @@ body {
 
     <!-- Products -->
     <div class="container">
-        <h2 class="section-title">Наш ассортимент</h2>
+        <h2 class="section-title">Ассортимент</h2>
 
         <!-- Хлеб -->
         <div class="category">
@@ -455,56 +520,77 @@ body {
         </div>
 
 
-        <!-- Напитки -->
-        <div class="category">
-            <h3 class="category-title">Напитки</h3>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://media.istockphoto.com/id/1199467344/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%88%D0%BA%D0%B0-%D0%BA%D0%BE%D1%84%D0%B5-%D1%81-%D0%B4%D1%8B%D0%BC%D0%BE%D0%BC-%D1%84%D0%BE%D1%80%D0%BC%D1%8B-%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0-%D0%B8-%D0%BA%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B7%D0%B5%D1%80%D0%BD%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BC%D0%B5%D1%88%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0%D1%85-%D0%BD%D0%B0-%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=_Fq6DrxdPL4Eq3EgiJOlEFxcUVH0kZ69nOkJh2XdSOI=" 
-                         alt="Кофе" class="product-image">
-                    <div class="product-info">
-                        <h4 class="product-name">Кофе</h4>
-                        <ul class="product-items">
-                            <li>Эспрессо <span class="item-price">119 ₽</span></li>
-                            <li>Американо <span class="item-price">129 ₽</span></li>
-                            <li>Капучино <span class="item-price">139 ₽</span></li>
-                            <li>Латте <span class="item-price">149 ₽</span></li>
-			    <li>Раф <span class="item-price">159 ₽</span></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://media.istockphoto.com/id/912302488/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D0%B9-%D1%81%D0%B2%D0%B5%D0%B6%D0%B5%D1%81%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B2-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D1%8F%D0%BD%D0%BD%D0%BE%D0%B9-%D1%87%D0%B0%D1%88%D0%BA%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D1%82%D1%80%D0%B0%D0%B2%D1%8B-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=ira58cbbQMiJ8YWaYNhYbx1IQK8Gj7XClcsZAr3tyd4=" 
-                         alt="Чай" class="product-image">
-                    <div class="product-info">
-                        <h4 class="product-name">Чай</h4>
-                        <ul class="product-items">
-                            <li>Классический <span class="item-price">79 ₽</span></li>
-                            <li>Фруктовый <span class="item-price">89 ₽</span></li>
-                            <li>Травяной <span class="item-price">109 ₽</span></li>
-                        </ul>
-                    </div>
-                </div>
+<!-- Напитки -->
+<div class="category">
+    <h3 class="category-title">Напитки</h3>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/1199467344/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%88%D0%BA%D0%B0-%D0%BA%D0%BE%D1%84%D0%B5-%D1%81-%D0%B4%D1%8B%D0%BC%D0%BE%D0%BC-%D1%84%D0%BE%D1%80%D0%BC%D1%8B-%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0-%D0%B8-%D0%BA%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B7%D0%B5%D1%80%D0%BD%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BC%D0%B5%D1%88%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0%D1%85-%D0%BD%D0%B0-%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=_Fq6DrxdPL4Eq3EgiJOlEFxcUVH0kZ69nOkJh2XdSOI=" 
+                 alt="Кофе" class="product-image">
+            <div class="product-info">
+                <h4 class="product-name">Кофе</h4>
+                <ul class="product-items">
+                    <li>Эспрессо <span class="item-price">119 ₽</span></li>
+                    <li>Американо <span class="item-price">129 ₽</span></li>
+                    <li>Капучино <span class="item-price">139 ₽</span></li>
+                    <li>Латте <span class="item-price">149 ₽</span></li>
+                    <li>Раф <span class="item-price">159 ₽</span></li>
+                </ul>
+            </div>
+        </div>
 
-<div class="product-card">
-                    <img src="https://lifehacker.ru/wp-content/uploads/2019/09/8C304672-1662-4C9C-8073-685B93CC2B4B_1569436750.jpeg" 
-                         alt="Морс" class="product-image">
-                    <div class="product-info">
-                        <h4 class="product-name">Морс</h4>
-                        <ul class="product-items">
-                            <li>Клюквенный <span class="item-price">90 ₽</span></li>
-                            <li>Брусничный <span class="item-price">95 ₽</span></li>
-                            <li>Облепиховый <span class="item-price">99 ₽</span></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/912302488/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D0%B9-%D1%81%D0%B2%D0%B5%D0%B6%D0%B5%D1%81%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B2-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D1%8F%D0%BD%D0%BD%D0%BE%D0%B9-%D1%87%D0%B0%D1%88%D0%BA%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D1%82%D1%80%D0%B0%D0%B2%D1%8B-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=ira58cbbQMiJ8YWaYNhYbx1IQK8Gj7XClcsZAr3tyd4=" 
+                 alt="Чай" class="product-image">
+            <div class="product-info">
+                <h4 class="product-name">Чай</h4>
+                <ul class="product-items">
+                    <li>Классический <span class="item-price">79 ₽</span></li>
+                    <li>Фруктовый <span class="item-price">89 ₽</span></li>
+                    <li>Травяной <span class="item-price">109 ₽</span></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="product-card">
+            <img src="https://lifehacker.ru/wp-content/uploads/2019/09/8C304672-1662-4C9C-8073-685B93CC2B4B_1569436750.jpeg" 
+                 alt="Морс" class="product-image">
+            <div class="product-info">
+                <h4 class="product-name">Морс</h4>
+                <ul class="product-items">
+                    <li>Клюквенный <span class="item-price">90 ₽</span></li>
+                    <li>Брусничный <span class="item-price">95 ₽</span></li>
+                    <li>Облепиховый <span class="item-price">99 ₽</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://www.torrefacto.ru/upload/uf/e67/ly3mdut97oq168tyc0y2z2d7cd37shxv.jpg" 
+                 alt="Какао" class="product-image">
+            <div class="product-info">
+                <h4 class="product-name">Какао</h4>
+                <ul class="product-items">
+                    <li>Какао <span class="item-price">99 ₽</span></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="product-card">
+            <img src="https://cdn-ru5.foodpicasso.com/assets/2024/04/12/3764eda4af857ca115a4bd0d993249c5---jpg_1000x_103c0_convert.jpg" 
+                 alt="Горячий шоколад" class="product-image">
+            <div class="product-info">
+                <h4 class="product-name">Горячий шоколад</h4>
+                <ul class="product-items">
+                    <li>Горячий шоколад <span class="item-price">109 ₽</span></li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
+</div>
 
+    
             <!-- Маффины и кексы -->
             <div class="subcategory">
                 <h4 class="subcategory-title">Маффины и кексы</h4>
@@ -539,6 +625,38 @@ body {
                     </div>
 	       </div>
 	   </div>
+
+
+<div class="features-section">
+    <div class="container">
+        <h2>Почему выбирают нас</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🌿</span>
+                <h3>Натуральные ингредиенты</h3>
+                <p>Только свежие и качественные продукты в каждой выпечке</p>
+            </div>
+            
+            <div class="feature">
+                <span class="feature-icon">👐</span>
+                <h3>Ручная работа</h3>
+                <p>Каждое изделие создаётся с любовью и вниманием к деталям</p>
+            </div>
+            
+            <div class="feature">
+                <span class="feature-icon">⭐</span>
+                <h3>Свежесть гарантирована</h3>
+                <p>Вся выпечка готовится ежедневно и доставляется свежей</p>
+            </div>
+            
+            <div class="feature">
+                <span class="feature-icon">👑</span>
+                <h3>Авторские рецепты</h3>
+                <p>Уникальные вкусы, которые вы не найдёте больше нигде</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer class="footer">
